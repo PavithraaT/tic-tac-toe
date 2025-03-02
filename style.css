@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(-45deg, #ff6b6b, #6b6bff, #4ecdc4, #ffcc00);
+    background-size: 400% 400%;
+    animation: gradientMove 8s infinite ease-in-out;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.game-container {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.game-title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.mode-selection, .player-selection {
+    margin-bottom: 15px;
+}
+
+.mode-btn, .player-btn {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.mode-btn.active, .player-btn.selected {
+    background-color: #ff4081;
+    color: white;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background: white;
+    color: black;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.cell:hover {
+    transform: scale(1.1);
+}
+
+.winning-cell {
+    background: #00ff99 !important;
+    animation: glow 0.5s infinite alternate;
+}
+
+@keyframes glow {
+    from { box-shadow: 0 0 5px #00ff99; }
+    to { box-shadow: 0 0 20px #00ff99; }
+}
+
+#winnerDisplay {
+    font-size: 1.5rem;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+#restartBtn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background: #ff4081;
+    color: white;
+    border: none;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+#restartBtn:hover {
+    background: #ff1a66;
+}
