@@ -19,10 +19,6 @@ A smart and interactive **Tic Tac Toe** game with two modes – play against a f
 3. The game ends when one player wins.
 4. Use **Restart Game** to replay.
 
-## 🖼️ Live Demo
-🔗 [Play Now](# Tic Tac Toe 🎮❌⭕️
-
-A smart and interactive **Tic Tac Toe** game with two modes – play against a friend or challenge the AI! Built using **HTML**, **CSS**, and **JavaScript**, this project offers a smooth user experience and simple, clean design.
 
 ## 🎯 Features
 - 👥 **Two-Player Mode**: Classic gameplay with Player X and Player O
