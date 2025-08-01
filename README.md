@@ -40,7 +40,7 @@ A smart and interactive **Tic Tac Toe** game with two modes – play against a f
 4. Use **Reset** to replay.
 
 ## 🖼️ Live Demo
-🔗 [Play Now](https://your-github-username.github.io/tic-tac-toe/)  
+🔗 [Play Now](https://pavithraat.github.io/tic-tac-toe/)  
 
 ## 📁 Project Structure
 tic-tac-toe/
